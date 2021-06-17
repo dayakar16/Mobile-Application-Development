@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonByThread"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/thread_button_label"
+        app:layout_constraintBottom_toTopOf="@+id/buttonByAsyncTask"
+        app:layout_constraintEnd_toEndOf="@+id/buttonByAsyncTask"
+        app:layout_constraintStart_toStartOf="@+id/buttonByAsyncTask" />
+
+    <Button
+        android:id="@+id/buttonByAsyncTask"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/asynctask_button_label"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:max="@integer/max_seekbar"
+        app:layout_constraintBottom_toTopOf="@+id/buttonByThread"
+        app:layout_constraintEnd_toEndOf="@+id/buttonByThread"
+        app:layout_constraintStart_toStartOf="@+id/buttonByThread" />
+
+    <TextView
+        android:id="@+id/selectComplexityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/complexity_label"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintStart_toStartOf="@+id/seekBar" />
+
+    <TextView
+        android:id="@+id/seekBarSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar" />
+
+    <ProgressBar
+        android:id="@+id/currentProgressSeekbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/currentProgressValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/averageText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/averageLabel"
+        app:layout_constraintEnd_toEndOf="@+id/currentProgressValue"
+        app:layout_constraintStart_toStartOf="@+id/currentProgressSeekbar"
+        app:layout_constraintTop_toBottomOf="@+id/currentProgressSeekbar" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/selectComplexityLabel"
+        app:layout_constraintEnd_toEndOf="@+id/averageText"
+        app:layout_constraintStart_toStartOf="@+id/averageText"
+        app:layout_constraintTop_toBottomOf="@+id/averageText" />
+
+    <TextView
+        android:id="@+id/currentProgressValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/currentProgressSeekbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/currentProgressSeekbar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

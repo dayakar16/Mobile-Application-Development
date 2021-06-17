@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4sp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/forecastItemBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/forecastItemTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toStartOf="@+id/forecastItemImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/forecastItemTemparature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="@+id/forecastItemTime"
+            app:layout_constraintTop_toBottomOf="@+id/forecastItemTime" />
+
+        <TextView
+            android:id="@+id/forecastItemTempMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:text="@string/max_label"
+            app:layout_constraintBottom_toBottomOf="@+id/forecastItemTemparature"
+            app:layout_constraintStart_toEndOf="@+id/forecastItemTemparature"
+            app:layout_constraintTop_toTopOf="@+id/forecastItemTemparature" />
+
+        <TextView
+            android:id="@+id/forecastItemTempMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:text="@string/min_label"
+            app:layout_constraintBottom_toBottomOf="@+id/forecastItemTempMax"
+            app:layout_constraintStart_toEndOf="@+id/forecastItemTempMaxValue"
+            app:layout_constraintTop_toTopOf="@+id/forecastItemTempMax"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/forecastItemHumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/hum_label"
+            app:layout_constraintStart_toStartOf="@+id/forecastItemTemparature"
+            app:layout_constraintTop_toBottomOf="@+id/forecastItemTemparature" />
+
+        <TextView
+            android:id="@+id/forecastItemDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/forecastItemHumidity"
+            app:layout_constraintTop_toBottomOf="@+id/forecastItemHumidity" />
+
+        <ImageView
+            android:id="@+id/forecastItemImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/forecastItemTime"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/forecastItemTime"
+            app:srcCompat="@android:drawable/dark_header" />
+
+        <TextView
+            android:id="@+id/forecastItemTempMaxValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="@+id/forecastItemTempMax"
+            app:layout_constraintStart_toEndOf="@+id/forecastItemTempMax"
+            app:layout_constraintTop_toTopOf="@+id/forecastItemTempMax" />
+
+        <TextView
+            android:id="@+id/forecastItemTempMinValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="@+id/forecastItemTempMin"
+            app:layout_constraintEnd_toEndOf="@+id/forecastItemImageView"
+            app:layout_constraintStart_toEndOf="@+id/forecastItemTempMin"
+            app:layout_constraintTop_toTopOf="@+id/forecastItemTempMin" />
+
+        <TextView
+            android:id="@+id/forecastItemHumidityValue"
+            android:layout_width="59dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="@+id/forecastItemHumidity"
+            app:layout_constraintStart_toEndOf="@+id/forecastItemHumidity"
+            app:layout_constraintTop_toTopOf="@+id/forecastItemHumidity" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

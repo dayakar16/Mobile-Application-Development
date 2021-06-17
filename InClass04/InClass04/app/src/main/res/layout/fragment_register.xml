@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterFragment">
+
+    <EditText
+        android:id="@+id/registerNameLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:ems="10"
+        android:hint="@string/name_placeholder"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/registerEmailLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/email_placeholder"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/registerNameLabel"
+        app:layout_constraintStart_toStartOf="@+id/registerNameLabel"
+        app:layout_constraintTop_toBottomOf="@+id/registerNameLabel" />
+
+    <EditText
+        android:id="@+id/registerPasswordLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/password_placeholder"
+        android:inputType="none|textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/registerEmailLabel"
+        app:layout_constraintStart_toStartOf="@+id/registerEmailLabel"
+        app:layout_constraintTop_toBottomOf="@+id/registerEmailLabel" />
+
+    <Button
+        android:id="@+id/registerSubmitButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/submit_label"
+        app:layout_constraintEnd_toEndOf="@+id/registerPasswordLabel"
+        app:layout_constraintStart_toStartOf="@+id/registerPasswordLabel"
+        app:layout_constraintTop_toBottomOf="@+id/registerPasswordLabel" />
+
+    <Button
+        android:id="@+id/registerCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@android:string/cancel"
+        android:textColor="#000000"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/registerSubmitButton"
+        app:layout_constraintTop_toBottomOf="@+id/registerSubmitButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

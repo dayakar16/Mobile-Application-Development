@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contactDetailsFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactDetailsFragment">
+
+    <TextView
+        android:id="@+id/cDetailsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/name_label"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/cDetailsNameValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cDetailsName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cDetailsName"
+        app:layout_constraintTop_toTopOf="@+id/cDetailsName" />
+
+    <TextView
+        android:id="@+id/cDetailsEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/email_label"
+        app:layout_constraintStart_toStartOf="@+id/cDetailsName"
+        app:layout_constraintTop_toBottomOf="@+id/cDetailsName" />
+
+    <TextView
+        android:id="@+id/cDetailsEmailValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/cDetailsEmail"
+        app:layout_constraintEnd_toEndOf="@+id/cDetailsNameValue"
+        app:layout_constraintStart_toStartOf="@+id/cDetailsNameValue"
+        app:layout_constraintTop_toTopOf="@+id/cDetailsEmail" />
+
+    <TextView
+        android:id="@+id/cDetailsNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/phone_label"
+        app:layout_constraintStart_toStartOf="@+id/cDetailsEmail"
+        app:layout_constraintTop_toBottomOf="@+id/cDetailsEmail" />
+
+    <TextView
+        android:id="@+id/cDetailsNumberValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/cDetailsNumber"
+        app:layout_constraintEnd_toEndOf="@+id/cDetailsEmailValue"
+        app:layout_constraintStart_toStartOf="@+id/cDetailsEmailValue"
+        app:layout_constraintTop_toTopOf="@+id/cDetailsNumber" />
+
+    <TextView
+        android:id="@+id/cDetailsType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/phone_type_label"
+        app:layout_constraintStart_toStartOf="@+id/cDetailsNumber"
+        app:layout_constraintTop_toBottomOf="@+id/cDetailsNumber" />
+
+    <TextView
+        android:id="@+id/cDetailsTypeValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/cDetailsType"
+        app:layout_constraintEnd_toEndOf="@+id/cDetailsNumberValue"
+        app:layout_constraintStart_toStartOf="@+id/cDetailsNumberValue"
+        app:layout_constraintTop_toTopOf="@+id/cDetailsType" />
+
+    <Button
+        android:id="@+id/cDetailsDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/cDetailsEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cDetailsIdValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/cDetailsNameValue"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

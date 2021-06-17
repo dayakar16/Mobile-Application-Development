@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "1009434300951",
+    "project_id": "forumsapplication-e20cc",
+    "storage_bucket": "forumsapplication-e20cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009434300951:android:c247448646d4142c794252",
+        "android_client_info": {
+          "package_name": "com.ahari.forumapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1009434300951-clih170626bmjtffpkjd4f08bnia8jg8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRb-83PvoUGF8yI61QRdoHH8xLqa0R1PE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1009434300951-clih170626bmjtffpkjd4f08bnia8jg8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009434300951:android:19ee1f256150a854794252",
+        "android_client_info": {
+          "package_name": "com.ahari.forumsapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1009434300951-clih170626bmjtffpkjd4f08bnia8jg8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRb-83PvoUGF8yI61QRdoHH8xLqa0R1PE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1009434300951-clih170626bmjtffpkjd4f08bnia8jg8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

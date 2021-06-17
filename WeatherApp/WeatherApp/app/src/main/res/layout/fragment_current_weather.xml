@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CurrentWeatherFragment">
+
+    <TextView
+        android:id="@+id/cityNameCurrentWeather"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/currentWeatherView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/currentWeatherView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@android:drawable/dark_header"
+        app:layout_constraintBottom_toBottomOf="@+id/cityNameCurrentWeather"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cityNameCurrentWeather" />
+
+    <TextView
+        android:id="@+id/currentWeatherTemparature"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/temparature_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/currentWeatherTemparatureValue"
+        app:layout_constraintStart_toStartOf="@+id/cityNameCurrentWeather"
+        app:layout_constraintTop_toBottomOf="@+id/cityNameCurrentWeather" />
+
+    <TextView
+        android:id="@+id/currentWeatherTemparatureValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/currentWeatherTemparature"
+        app:layout_constraintEnd_toEndOf="@+id/currentWeatherView"
+        app:layout_constraintTop_toTopOf="@+id/currentWeatherTemparature" />
+
+    <TextView
+        android:id="@+id/currentWeatherTemparatureHigh"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/temparature_max_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/currentWeatherTemparature"
+        app:layout_constraintStart_toStartOf="@+id/currentWeatherTemparature"
+        app:layout_constraintTop_toBottomOf="@+id/currentWeatherTemparature" />
+
+    <TextView
+        android:id="@+id/currentWeatherTemparatureHighValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/currentWeatherTemparatureHigh"
+        app:layout_constraintEnd_toEndOf="@+id/currentWeatherTemparatureValue"
+        app:layout_constraintTop_toTopOf="@+id/currentWeatherTemparatureHigh" />
+
+    <TextView
+        android:id="@+id/currentWeatherTemparatureMin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/temparature_min_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/currentWeatherTemparatureHigh"
+        app:layout_constraintStart_toStartOf="@+id/currentWeatherTemparatureHigh"
+        app:layout_constraintTop_toBottomOf="@+id/currentWeatherTemparatureHigh" />
+
+    <TextView
+        android:id="@+id/currentWeatherTemparatureMinValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/currentWeatherTemparatureMin"
+        app:layout_constraintEnd_toEndOf="@+id/currentWeatherTemparatureHighValue"
+        app:layout_constraintTop_toTopOf="@+id/currentWeatherTemparatureMin" />
+
+    <TextView
+        android:id="@+id/currentWeatherDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/description_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/currentWeatherTemparatureMin"
+        app:layout_constraintStart_toStartOf="@+id/currentWeatherTemparatureMin"
+        app:layout_constraintTop_toBottomOf="@+id/currentWeatherTemparatureMin" />
+
+    <TextView
+        android:id="@+id/currentWeatherDescriptionValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/currentWeatherDescription"
+        app:layout_constraintEnd_toEndOf="@+id/currentWeatherTemparatureMinValue"
+        app:layout_constraintTop_toTopOf="@+id/currentWeatherDescription" />
+
+    <TextView
+        android:id="@+id/currentWeatherHumidity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/humidity_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/currentWeatherDescription"
+        app:layout_constraintStart_toStartOf="@+id/currentWeatherDescription"
+        app:layout_constraintTop_toBottomOf="@+id/currentWeatherDescription" />
+
+    <TextView
+        android:id="@+id/currentWeatherHumidityValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/currentWeatherHumidity"
+        app:layout_constraintEnd_toEndOf="@+id/currentWeatherDescriptionValue"
+        app:layout_constraintTop_toTopOf="@+id/currentWeatherHumidity" />
+
+    <TextView
+        android:id="@+id/currentWeatherWindSpeed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/wind_speed_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/currentWeatherHumidity"
+        app:layout_constraintStart_toStartOf="@+id/currentWeatherHumidity"
+        app:layout_constraintTop_toBottomOf="@+id/currentWeatherHumidity" />
+
+    <TextView
+        android:id="@+id/currentWeatherWindSpeedValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/currentWeatherWindSpeed"
+        app:layout_constraintEnd_toEndOf="@+id/currentWeatherHumidityValue"
+        app:layout_constraintTop_toTopOf="@+id/currentWeatherWindSpeed" />
+
+    <TextView
+        android:id="@+id/currentWeatherWindDegree"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/wind_degree_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/currentWeatherWindSpeed"
+        app:layout_constraintStart_toStartOf="@+id/currentWeatherWindSpeed"
+        app:layout_constraintTop_toBottomOf="@+id/currentWeatherWindSpeed" />
+
+    <TextView
+        android:id="@+id/currentWeatherWindDegreeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/currentWeatherWindDegree"
+        app:layout_constraintEnd_toEndOf="@+id/currentWeatherWindSpeedValue"
+        app:layout_constraintTop_toTopOf="@+id/currentWeatherWindDegree" />
+
+    <TextView
+        android:id="@+id/currentWeatherCloudliness"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/cloudiness_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/currentWeatherWindDegree"
+        app:layout_constraintStart_toStartOf="@+id/currentWeatherWindDegree"
+        app:layout_constraintTop_toBottomOf="@+id/currentWeatherWindDegree" />
+
+    <TextView
+        android:id="@+id/currentWeatherCloudlinessValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/currentWeatherCloudliness"
+        app:layout_constraintEnd_toEndOf="@+id/currentWeatherWindDegreeValue"
+        app:layout_constraintTop_toTopOf="@+id/currentWeatherCloudliness" />
+
+    <Button
+        android:id="@+id/checkForecastButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/check_forecast"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

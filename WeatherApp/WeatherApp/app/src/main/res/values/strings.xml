@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="check_forecast">Check Forecast</string>
+    <string name="temparature_label">Temperature</string>
+    <string name="temparature_max_label">Temperature Max</string>
+    <string name="temparature_min_label">Temperature Min</string>
+    <string name="description_label">Description</string>
+    <string name="humidity_label">Humidity</string>
+    <string name="wind_speed_label">Wind Speed</string>
+    <string name="wind_degree_label">Wind Degree</string>
+    <string name="cloudiness_label">Cloudiness</string>
+
+    <string name="api_token">acf96ac0e0ae81d81cd4eb385145cacb</string>
+    <string name="current_weather_endpoint">api.openweathermap.org/data/2.5/weather</string>
+    <string name="forecast_weather_endpoint">api.openweathermap.org/data/2.5/forecast</string>
+
+    <string name="max_label">Max :</string>
+    <string name="min_label">Min :</string>
+    <string name="hum_label">Humidity :</string>
+
+    <string name="picaso_url">https://openweathermap.org/img/wn/</string>
+    <string name="error_toast">API Call Failure, Please try again</string>
+    <string name="weather_host">api.openweathermap.org</string>
+    <string name="schema_host">https</string>
+    <string name="weather_forecast_path">data/2.5/forecast</string>
+    <string name="weather_current_path">data/2.5/weather</string>
+
+    <string name="mph">miles/hr</string>
+    <string name="degrees">degrees</string>
+
+    <string name="current_weather_title">Current Weather</string>
+    <string name="forecast_weather_title">Weather Forecast</string>
+    <string name="cities_title">Cities</string>
+    <string name="loading">Loading...</string>
+
+</resources>

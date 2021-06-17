@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">InClass06</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="thread_button_label">Generate Using Thread</string>
+    <string name="asynctask_button_label">Generate Using AsyncTask</string>
+    <string name="complexity_label">Select Complexity</string>
+    <string name="averageLabel">Average :</string>
+    <string name="timeslabel">Times</string>
+    <string name="forwardslash">/</string>
+    <string name="zero_msg">Complexity Cannot be empty</string>
+    <integer name="max_seekbar">20</integer>
+    <integer name="number_of_threads">2</integer>
+</resources>

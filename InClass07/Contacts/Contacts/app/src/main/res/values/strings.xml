@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Contacts</string>
+
+    <string name="CONTACTS_ALL">https://www.theappsdr.com/contacts</string>
+    <string name="CONTACTS_CREATE">https://www.theappsdr.com/contact/create</string>
+    <string name="CONTACTS_UPDATE">https://www.theappsdr.com/contact/update</string>
+    <string name="CONTACTS_DELETE">https://www.theappsdr.com/contact/delete</string>
+    <string name="CONTACTS_BY_ID">https://www.theappsdr.com/contact</string>
+
+    <string name="name_label">Name :</string>
+    <string name="email_label">Email :</string>
+    <string name="phone_label">Phone :</string>
+    <string name="phone_type_label">Type :</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="save">Update</string>
+    <string name="submit">Submit</string>
+    <string name="edit">Update</string>
+    <string name="delete">Delete</string>
+
+    <string name="name_placeholder">Please enter the name</string>
+    <string name="email_placeholder">Please enter the email</string>
+    <string name="phone_placeholder">Please enter the phone number</string>
+    <string name="phone_type_placeholder">HOME, OFFICE or CELL</string>
+    <string name="create_button">Add Contact</string>
+    <string name="create_button_create">Create</string>
+    <string name="id">Id:</string>
+
+    <string name="invalid_name">Enter Valid Name</string>
+    <string name="invalid_phone">Enter Valid Phone</string>
+    <string name="invalid_email">Enter Valid Email</string>
+    <string name="invalid_type">Enter Valid Phone Type</string>
+
+    <string name="edit_details">Edit Contact</string>
+    <string name="contacts">All Contacts</string>
+    <string name="create_contact">Create Contact</string>
+    <string name="contact_details">Contact Details</string>
+    <string name="message_title">Message</string>
+    <string name="ok_label">Ok</string>
+    <string name="cancel_label">Cancel</string>
+
+    <string name="no_contacts">No contacts available</string>
+    <string name="api_error">Error occurred in API</string>
+
+    <string name="edit_screen_popup">Do you want update with current details?</string>
+    <string name="yes_label">Yes</string>
+    <string name="no_label">No</string>
+</resources>

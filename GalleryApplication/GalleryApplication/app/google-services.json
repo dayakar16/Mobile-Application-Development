@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1042563533810",
+    "project_id": "galleryapplication-d8ba7",
+    "storage_bucket": "galleryapplication-d8ba7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042563533810:android:96569773fd500219e2796b",
+        "android_client_info": {
+          "package_name": "com.ahari.galleryapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042563533810-i1u1f1egfkula5vuurqe9q0lni94kqgi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl7ZBojQhubbw82-AVP6U0l6z2JHMXMZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1042563533810-i1u1f1egfkula5vuurqe9q0lni94kqgi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

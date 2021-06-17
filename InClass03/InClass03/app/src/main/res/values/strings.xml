@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">InClass03</string>
+    <string name="name_label">Name: </string>
+    <string name="email_label">Email: </string>
+    <string name="id_label">ID: </string>
+    <string name="dept_label">Dept: </string>
+    <string name="select_button">Select</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="submit_button">Submit</string>
+    <string name="name_placeholder">Enter Name</string>
+    <string name="id_placeholder">Enter ID</string>
+    <string name="email_placeholder">Enter Email</string>
+
+    <string name="department_cs">Computer Science</string>
+    <string name="department_sis">Software Info. Systems</string>
+    <string name="department_ds">Data Science</string>
+    <string name="department_bi">Bio Informatics</string>
+
+    <string name="toast_name">Enter a valid Name</string>
+    <string name="toast_email">Enter a valid Email</string>
+    <string name="toast_id">Enter a valid Id</string>
+    <string name="toast_dept">Select a Department</string>
+
+    <string name="toast_select_department">Select any Department</string>
+
+    <string name="title_registration">Registration</string>
+    <string name="title_department">Department</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="intent_implicit">com.inclass03.intent.action.PROFILE</string>
+
+</resources>

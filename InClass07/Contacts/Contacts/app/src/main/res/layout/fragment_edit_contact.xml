@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editContactFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditContactFragment">
+
+    <TextView
+        android:id="@+id/editContactName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/name_label"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/editContactNameValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editContactName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editContactName"
+        app:layout_constraintTop_toTopOf="@+id/editContactName" />
+
+    <TextView
+        android:id="@+id/editContactEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/email_label"
+        app:layout_constraintStart_toStartOf="@+id/editContactName"
+        app:layout_constraintTop_toBottomOf="@+id/editContactName" />
+
+    <EditText
+        android:id="@+id/editContactEmailValue"
+        app:layout_constraintBottom_toBottomOf="@+id/editContactEmail"
+        app:layout_constraintEnd_toEndOf="@+id/editContactNameValue"
+        app:layout_constraintStart_toStartOf="@+id/editContactNameValue"
+        app:layout_constraintTop_toTopOf="@+id/editContactEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/editContactNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/phone_label"
+        app:layout_constraintStart_toStartOf="@+id/editContactEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editContactEmail" />
+
+    <EditText
+        android:id="@+id/editContactNumberValue"
+        app:layout_constraintBottom_toBottomOf="@+id/editContactNumber"
+        app:layout_constraintEnd_toEndOf="@+id/editContactEmailValue"
+        app:layout_constraintStart_toStartOf="@+id/editContactEmailValue"
+        app:layout_constraintTop_toTopOf="@+id/editContactNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="none|phone"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/editContactType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/phone_type_label"
+        app:layout_constraintStart_toStartOf="@+id/editContactNumber"
+        app:layout_constraintTop_toBottomOf="@+id/editContactNumber" />
+
+    <EditText
+        android:id="@+id/editContactTypeValue"
+        app:layout_constraintBottom_toBottomOf="@+id/editContactType"
+        app:layout_constraintEnd_toEndOf="@+id/editContactNumberValue"
+        app:layout_constraintStart_toStartOf="@+id/editContactNumberValue"
+        app:layout_constraintTop_toTopOf="@+id/editContactType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/editContactCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/editContactSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/editContactIdValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/editContactNameValue"
+        app:layout_constraintStart_toStartOf="@+id/editContactNameValue"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

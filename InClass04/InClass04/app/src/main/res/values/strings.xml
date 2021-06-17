@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">InClass04</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <!--    Global Constants-->
+    <string name="password_placeholder">Password</string>
+    <string name="email_placeholder">Email</string>
+
+    <!--    Login Fragment Constants-->
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+
+    <!--    Register Fragment Constants-->
+    <string name="name_placeholder">Name</string>
+    <string name="submit_label">Submit</string>
+
+    <!--    Account Fragment Constants-->
+    <string name="edit_profile_label">Edit Profile</string>
+    <string name="logout_label">LogOut</string>
+    <string name="welcome_label">Welcome</string>
+
+    <!--    Titles-->
+    <string name="login_title">Login</string>
+    <string name="register_title">Register Account</string>
+    <string name="account_title">Account</string>
+    <string name="update_title">Update Account</string>
+
+    <!--    Toasts-->
+    <string name="success_login">Login Successful</string>
+    <string name="failed_login">Login Failed</string>
+    <string name="success_register">Registration Successful</string>
+    <string name="failed_register">Registration Failed</string>
+    <string name="success_update">Update Successful</string>
+    <string name="failure_update">Update Failed</string>
+
+    <string name="invalid_email">Please enter a valid Email</string>
+    <string name="invalid_name">Please enter a valid Name</string>
+    <string name="invalid_password">Please enter a valid Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
